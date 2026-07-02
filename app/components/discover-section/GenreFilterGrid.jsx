@@ -53,7 +53,7 @@ function GenreFilterGrid({ onGenreSelect }) {
           return (
             <button
               key={`${genre.id}-${genre.name}`}
-              onClick={() => handleSelect(genre)}  // ✅ full genre object pass ചെയ്യുന്നു
+              onClick={() => handleSelect(genre)}  
               className={`flex items-center gap-3 w-full px-5 py-4 rounded-sm border text-left font-medium transition-all duration-200 group text-sm md:text-base
                 ${
                   isSelected

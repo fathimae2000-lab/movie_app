@@ -192,7 +192,7 @@ export default function ReviewLayout() {
           )}
         </div>
 
-        <div className="bg-black border-l border-white/5 px-6 py-10 w-72 shrink-0 hidden md:block">
+        <div className="bg-black border-l border-white/5 px-6 py-10 w-72 shrink-0 hidden md:block self-start">
           <MovieSidebar
             spotlightMovies={movies.slice(0, 3).map(movie => ({
               id: movie.id,

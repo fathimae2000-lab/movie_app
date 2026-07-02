@@ -79,9 +79,9 @@ const MovieSidebar = ({ spotlightMovies, onSearch, onNavChange, activeNav }) => 
   };
 
   return (
-    <aside className="w-full flex flex-col bg-black text-white h-screen sticky top-0 overflow-visible">
+    <aside className="w-full flex flex-col bg-black text-white">
       {/* Search Container Area */}
-      <div className="relative w-full z-50" ref={dropdownRef}>
+      <div className="relative w-full z-20" ref={dropdownRef}>
         <form onSubmit={handleSubmit} className="flex items-stretch h-14 w-full">
           <input
             type="text"
@@ -181,7 +181,7 @@ const MovieSidebar = ({ spotlightMovies, onSearch, onNavChange, activeNav }) => 
       </div>
 
       {/* Spotlight Movies Section */}
-      <div className="mt-8 px-5 pb-6 overflow-y-auto flex-1 custom-scrollbar">
+      <div className="mt-8 px-5 pb-6">
         <h3 className="text-slate-400 font-bold text-lg mb-4">In Spotlight today:</h3>
         
         <div className="flex flex-col gap-6">

@@ -23,7 +23,7 @@ export default function RootLayout({
     <html
       lang="en"
         className={catamaran.className}    >
-      <body className="min-h-full flex flex-col">
+      <body className=" min-h-full flex flex-col max-w-full overflow-x-hidden">
         <Navigation/>
         {children}
         </body>

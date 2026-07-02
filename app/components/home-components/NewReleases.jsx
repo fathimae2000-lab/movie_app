@@ -18,7 +18,6 @@ const catamaran = Catamaran({
 const TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w780";
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/original";
 
-// 🟢 തിരുത്തൽ: ചെറിയ കാർഡുകളിലും ലിങ്ക് വർക്ക് ചെയ്യാൻ <Link> ടാഗ് ഉൾപ്പെടുത്തി
 function MovieCard({ movie, genreMap }) {
   const genres =
     movie.genre_ids?.slice(0, 2).map((id) => genreMap[id]).filter(Boolean) || [];
@@ -46,7 +45,7 @@ function MovieCard({ movie, genreMap }) {
         </div>
 
         <div className="pt-4 pb-2 px-1 flex flex-col gap-1">
-          <StarRating rating={movie.vote_average} />
+          <StarRating rating={movie.vote_average/ 2} />
           <h3 className="text-white font-bold text-xl mt-1 line-clamp-1 group-hover:text-yellow-400 transition-colors">
             {movie.title}
           </h3>
@@ -129,7 +128,6 @@ export default function MovieGrid() {
         <div className="max-w-7xl mx-auto grid grid-cols-3 gap-6 items-start">
           
           {/* Featured Card */}
-          {/* 🟢 തിരുത്തൽ: movie.id എന്നത് featured.id എന്ന് തിരുത്തി, ലിങ്ക് കാർഡിന് പൂർണ്ണമായി ബാധകമാക്കി */}
           <Link href={`/movies/${featured.id}`} className="relative row-span-2 rounded-xl overflow-visible cursor-pointer group min-h-[580px] mt-6 block">
             <div className="absolute left-1/2 -translate-x-1/2 -top-5 z-20 w-12 h-8 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg">
               <span className="text-[#081b27] text-lg font-extrabold">
