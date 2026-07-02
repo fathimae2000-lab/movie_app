@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
-  "exclude": ["node_modules"]
+, "app/components/home-components/detailPage/MainPart.jsx", "app/movies/[id]/page.jsx", "app/category/[genre]/page.jsx", "app/reviews/[reviewId]/page.jsx"  ],
+  "exclude": ["app/node_modules"]
 }

@@ -1,8 +1,4 @@
-# movie_app
-A sleek, modern, and high-performance movie web application built using Next.js 14, Tailwind CSS, and TMDB API. This application fetches real-time data for upcoming, trending, and popular cinematic releases, displaying them in a beautifully engineered custom asymmetric grid layout.
-
-
-# 🎬 CineVerse — Premium Movie App
+# 🎬 CineMatch — Premium Movie App
 
 A sleek, modern, and high-performance movie web application built using **Next.js 14**, **Tailwind CSS**, and **TMDB API**. This application fetches real-time data for upcoming, trending, and popular cinematic releases, displaying them in a beautifully engineered custom asymmetric grid layout.
 
