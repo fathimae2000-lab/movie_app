@@ -59,7 +59,7 @@ const ContactPage = () => {
     <div
       className={`${catamaran.className} relative min-h-screen flex items-center px-6 md:px-24 lg:px-44 py-16 overflow-x-hidden`}
       style={{
-        backgroundImage: "url('/contact img.jpg')",
+        backgroundImage: "url('/contact-img.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

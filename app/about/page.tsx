@@ -18,7 +18,7 @@ const Page = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "url('/about image.jpg')",
+            backgroundImage: "url('/about-image.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
