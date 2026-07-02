@@ -7,7 +7,7 @@ export const tmdb = axios.create({
     Accept: "application/json",
   },
   params: {
-    api_key: process,
+    api_key: process.env.NEXT_PUBLIC_API_KEY,
   },
 });
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react"
 import { tmdb } from "@/services/api"
 
 export function useGenres() {
-  const [genres, setGenres] = useState([])   // array: [{id, name}]
-  const [genreMap, setGenreMap] = useState({}) // map: {id: name}
+  const [genres, setGenres] = useState([])   
+  const [genreMap, setGenreMap] = useState({}) 
   const [loading, setLoading] = useState(true)
 
 // useGenres.js
