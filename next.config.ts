@@ -1,5 +1,4 @@
-import type { NextConfig } from "@/app/node_modules/next";
-
+import type { NextConfig } from "next"; 
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
