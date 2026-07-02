@@ -62,7 +62,7 @@ function GenreFilterGrid({ onGenreSelect }) {
                 }
               `}
             >
-              <div className="flex items-center justify-center w-5 h-5">
+              <div className="flex  items-center justify-center w-5 h-5">
                 <svg
                   className={`w-4 h-4 transition-colors duration-200 ${
                     isSelected ? "text-[#f5b50a]" : "text-gray-500/70 group-hover:text-gray-400"

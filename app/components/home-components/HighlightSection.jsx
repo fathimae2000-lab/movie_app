@@ -22,7 +22,8 @@ export default function HighlightSection() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const genreMap = useGenres();
+  const { genreMap } = useGenres();
+
 
   useEffect(() => {
     setLoading(true);

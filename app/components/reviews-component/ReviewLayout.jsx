@@ -28,7 +28,8 @@ export default function ReviewLayout() {
   
   const [activeNav, setActiveNav] = useState("All Reviews");
 
-  const genreMap = useGenres();
+const { genreMap } = useGenres();
+
 
   useEffect(() => {
     setLoading(true);

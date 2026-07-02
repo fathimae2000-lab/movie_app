@@ -7,7 +7,7 @@ import { useGenres } from "@/app/hooks/useGenre";
 import { IMG_BASE_URL, IMG_HIGH_RES_URL } from "../../services/api";
 
 function DiscoverGrid({ movies = [] }) {
-  const genreMap = useGenres();
+const { genreMap } = useGenres();
 
   // Constrain incoming movies array to exactly 7 items max
   const displayedMovies = movies.slice(0, 7);

@@ -33,7 +33,7 @@ export default function GenreMoviesSection({ selectedGenreId, selectedGenreName,
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl ">
           {movies.map((movie) => {
             const genres = movie.genre_ids
               .map((id) => genreMap[id])
@@ -41,7 +41,7 @@ export default function GenreMoviesSection({ selectedGenreId, selectedGenreName,
               .slice(0, 2)
 
             return (
-              <div key={movie.id} className="flex flex-col gap-3 group cursor-pointer">
+              <div key={movie.id} className="flex flex-col gap-3 group cursor-pointer ">
                 {/* Poster Card */}
                 <div className="relative rounded-xl overflow-visible aspect-[2/3] bg-[#162436] mt-6">
                   {/* Rating Circle */}
